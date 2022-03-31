@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Dükkanı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="kitaplariGetir()">
+    <h3>Kitap Dükkanı</h3>
+    <form id="kitaplik">
+        <label for="yazarlar">Yazar Seçiniz:</label>
+        <label for="rowling">J.K. Rowling</label>
+        <input type="radio" name="yazarlar" id="rowling">
+        <label for="verdon">John Verdon</label>
+        <input type="radio" name="yazarlar" id="verdon">
+        <label for="riordan">Rick Riordan</label>
+        <input type="radio" name="yazarlar" id="riordan">
+        <label for="doyle">Sir Arthur Conan Doyle</label>
+        <input type="radio" name="yazarlar" id="doyle">
+
+        <div id="kitapPanel">
+            <label for="kitap">Kitap Seçimi Yapınız:</label>
+        </div>
+        <label for="adetSecimi">Adet Seçimi Yapınız:</label>
+        <input type="number" name="adetSecimi" id="kitapAdet" value="1" min="1">
+        <input type="button" value="Sepete Ekle" id="btnEkle" onclick="sepeteEkle()">
+
+        <select name="sepet" id="sepetKitap" size="10">
+            <option value="0">Seçtiğiniz Kitaplar</option>
+        </select>
+
+        <input type="button" value="Sepetten Çıkar" id="btnCikar" onclick="sepettenCikar()">
+        <input type="button" value="Sepeti Boşalt" id="btnBosalt" onclick="sepetiBosalt()">
+        <h4 id="sepetTutar"></h4>
+        <label for="indirim">İndirim Kodu:</label>
+        <input type="text" name="indirim" id="txtIndirim">
+        <input type="button" value="Kodu Ekle" id="btnKod" onclick="koduEkle()">
+        <h3 id="sonuc"></h3>
+        <input type="button" value="Tamamla ve Öde" id="btnTamamla">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

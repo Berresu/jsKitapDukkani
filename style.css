@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Libre+Baskerville&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 173, 123);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-family: "Libre Baskerville";
+    font-size: 1.50rem;
+}
+
+form > *{
+    font-family: "Libre Baskerville";
+    font-size: 1.30rem;
+}
+
+#kitapPanel > label{
+    font-family: 'IM Fell English SC',sans-serif;
+    font-size: 1.30rem;
+}
+
+#kitapPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+
+#kitapPanel > label{
+    margin: 1vh;
+}
+
+#kitapPanel > img{
+    width: 20vh;
+    height: 30vh;
+}
